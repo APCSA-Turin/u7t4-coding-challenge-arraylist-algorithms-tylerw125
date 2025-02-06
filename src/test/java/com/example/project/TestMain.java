@@ -127,12 +127,12 @@ public class TestMain{
      
         list.clear();expected.clear();
         Collections.addAll(list, 3,4);
-        Collections.addAll(expected,4,4);
+        Collections.addAll(expected,3,4);
         assertEquals(expected,Main.notAlone(list,3));
 
         list.clear();expected.clear();
         Collections.addAll(list, 4,3,4,4);
-        Collections.addAll(expected,3,3,4,4);
+        Collections.addAll(expected,4,3,4,4);
         assertEquals(expected,Main.notAlone(list,4));
     }
 
